@@ -26,6 +26,9 @@ CREATE SCHEMA IF NOT EXISTS DWH;      -- modelo analítico (estrela)
 -- =====================================================================
 -- 3) AIRBYTE INTEGRATION
 -- =====================================================================
+-- Start the lab_wb
+ALTER WAREHOUSE LAB_WH RESUME;
+
 CREATE DATABASE LAB_AIRBYTE;
 
 CREATE ROLE AIRBYTE_DEV;
